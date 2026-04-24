@@ -8,6 +8,8 @@ public enum ToolType
     Hoe,
     Pickaxe,
     Shovel,
+    WateringCan,
+    FishingRod,
 }
 
 public class Tool : MonoBehaviour
@@ -15,6 +17,8 @@ public class Tool : MonoBehaviour
     [SerializeField] private ToolType type;
     [SerializeField] private int upgrade;
     [SerializeField] private int durability;
+
+    Dictionary<int, ToolData> dictToolData = new Dictionary<int, ToolData>();
 
     public void LoadFrom(ToolData toolData)
     {
