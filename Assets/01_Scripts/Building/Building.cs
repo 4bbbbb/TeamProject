@@ -8,5 +8,5 @@ public class Building : MonoBehaviour
 
     public int Width => width;
     public int Height => height;
-    public bool bMovable => bMovable;
+    public bool Movable => movable;
 }
