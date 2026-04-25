@@ -267,7 +267,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6253397533470242788}
-  - component: {fileID: 5617475943951360462}
   m_Layer: 0
   m_Name: House_Tent
   m_TagString: Untagged
@@ -297,21 +296,6 @@ Transform:
   - {fileID: 8737365452634038660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!114 &5617475943951360462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4649432146900052059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8548cb0a58812f0468818a3b13a78640, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  width: 6
-  height: 6
-  movable: 1
 --- !u!1 &5411574340911805603
 GameObject:
   m_ObjectHideFlags: 0
