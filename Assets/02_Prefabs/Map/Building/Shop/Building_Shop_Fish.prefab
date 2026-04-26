@@ -353,7 +353,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6283945867082891128}
-  - component: {fileID: 108929133159706264}
   m_Layer: 0
   m_Name: Drawer_Prefab (1)
   m_TagString: Untagged
@@ -377,27 +376,6 @@ Transform:
   - {fileID: 4484244183148383522}
   m_Father: {fileID: 4712773167771845713}
   m_LocalEulerAnglesHint: {x: 0, y: 94.655, z: 0}
---- !u!65 &108929133159706264
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584419971460108480}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.82, y: 0.84, z: 0.82}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &586088955401123939
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +385,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1233353428544154636}
-  - component: {fileID: 576372001288403572}
   m_Layer: 0
   m_Name: Trade_Box_Broken_2_Prefap
   m_TagString: Untagged
@@ -436,27 +413,6 @@ Transform:
   - {fileID: 2440487604607782855}
   m_Father: {fileID: 3702913308710405641}
   m_LocalEulerAnglesHint: {x: 0, y: -124.943, z: 0}
---- !u!65 &576372001288403572
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586088955401123939}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.85, y: 0.58, z: 0.76}
-  m_Center: {x: -0.03, y: 0, z: 0.03}
 --- !u!1 &720495955424334342
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,7 +508,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1920648653689137121}
-  - component: {fileID: 8503014182918902898}
   m_Layer: 0
   m_Name: Fish_Raz_2_Prefab 1 (2)
   m_TagString: Untagged
@@ -576,27 +531,6 @@ Transform:
   - {fileID: 7956203133832170467}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -25.089, y: 128.651, z: -22.638}
---- !u!65 &8503014182918902898
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 817125930255344584}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.52, y: 0.19, z: 0.35}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &857733219248263164
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +540,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8876883692814672622}
-  - component: {fileID: 7477433493314972302}
   m_Layer: 0
   m_Name: Barrel_Prefap (1)
   m_TagString: Untagged
@@ -630,29 +563,6 @@ Transform:
   - {fileID: 2462793022808630821}
   m_Father: {fileID: 5682934585844841457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7477433493314972302
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857733219248263164}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41
-  m_Height: 1.45
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &871693924223774095
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,7 +572,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4172332301759813542}
-  - component: {fileID: 1158521487682938815}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (2)
   m_TagString: Untagged
@@ -686,27 +595,6 @@ Transform:
   - {fileID: 4364640579343403785}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 85.52, y: -27.088, z: -192.672}
---- !u!65 &1158521487682938815
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871693924223774095}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &871943717663742160
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +604,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 971407596462389748}
-  - component: {fileID: 3259427872348954766}
   m_Layer: 0
   m_Name: Plate_Prefab
   m_TagString: Untagged
@@ -740,27 +627,6 @@ Transform:
   - {fileID: 3730445080310705007}
   m_Father: {fileID: 3702913308710405641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3259427872348954766
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871943717663742160}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.4, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &891947464947668314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1014,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7791937116108248322}
-  - component: {fileID: 2219570117068495039}
   m_Layer: 0
   m_Name: Shark_Prefab
   m_TagString: Untagged
@@ -1172,27 +1037,6 @@ Transform:
   - {fileID: 9201778343714685583}
   m_Father: {fileID: 9065887482236972766}
   m_LocalEulerAnglesHint: {x: 0, y: -37.771, z: 0}
---- !u!65 &2219570117068495039
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576503821936282142}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.95, y: 2.47, z: 0.73}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1732532613057341576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,7 +1390,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4254869979379365771}
-  - component: {fileID: 4969763393699567624}
   m_Layer: 0
   m_Name: Fish_Raz_1_Prefab (1)
   m_TagString: Untagged
@@ -1570,27 +1413,6 @@ Transform:
   - {fileID: 7114983194433357891}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -2.937, y: 142.565, z: 13.434}
---- !u!65 &4969763393699567624
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005561818508038599}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.79, y: 1.63, z: 0.43}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2012647256669071033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,8 +1443,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6669532132762012938}
+  m_Children: []
   m_Father: {fileID: 3130318602616999903}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8033511660615855730
@@ -1687,7 +1508,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2008373717431552103}
-  - component: {fileID: 5735545539333229306}
   m_Layer: 0
   m_Name: Drawer_Prefab
   m_TagString: Untagged
@@ -1711,27 +1531,6 @@ Transform:
   - {fileID: 8181269480621715118}
   m_Father: {fileID: 4712773167771845713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5735545539333229306
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044664110432499171}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.82, y: 0.84, z: 0.82}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2078566237507458127
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1540,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8732928890555612613}
-  - component: {fileID: 5383996356985969628}
   m_Layer: 0
   m_Name: Fish_3_Prefab
   m_TagString: Untagged
@@ -1765,80 +1563,6 @@ Transform:
   - {fileID: 2930360074226499460}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 74.264, y: -102.619, z: -71.641}
---- !u!65 &5383996356985969628
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078566237507458127}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.67, y: 1.37, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &2301950255937264699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2668606229111417540}
-  - component: {fileID: 8481483622077702563}
-  m_Layer: 0
-  m_Name: GameObject (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &2668606229111417540
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2301950255937264699}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.093083546, y: -0, z: -0, w: 0.99565834}
-  m_LocalPosition: {x: -0.047, y: 0.9900001, z: -0.32000017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 10.682, y: 0, z: 0}
---- !u!65 &8481483622077702563
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2301950255937264699}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.8, y: 0.12, z: 2.34}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2362451121854569527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +1884,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6355792935505877421}
-  - component: {fileID: 2387494142807750071}
   m_Layer: 0
   m_Name: Fish_3_Prefab (1)
   m_TagString: Untagged
@@ -2184,27 +1907,6 @@ Transform:
   - {fileID: 3610836516468724567}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 78.053, y: -24.789, z: -97.19}
---- !u!65 &2387494142807750071
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2788780562998117245}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.67, y: 1.37, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2803127334312721079
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,7 +1916,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6551777547292612562}
-  - component: {fileID: 8799974859460306804}
   m_Layer: 0
   m_Name: Fish_Raz_4_Prefab
   m_TagString: Untagged
@@ -2238,27 +1939,6 @@ Transform:
   - {fileID: 8453083656601108310}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 80.575, y: -72.843, z: -163.061}
---- !u!65 &8799974859460306804
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2803127334312721079}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.7, y: 1.24, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2837529020659460552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2034,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 247407869247888149}
-  - component: {fileID: 2404277725538766458}
   m_Layer: 0
   m_Name: Fish_Raz_2_Prefab 1 (4)
   m_TagString: Untagged
@@ -2378,27 +2057,6 @@ Transform:
   - {fileID: 6177506222459064702}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 76.867, y: -138.199, z: 131.147}
---- !u!65 &2404277725538766458
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2868508668314097739}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.52, y: 0.19, z: 0.35}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2901507885723118754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,7 +2324,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7444070494357941956}
-  - component: {fileID: 6472806186974937417}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (5)
   m_TagString: Untagged
@@ -2690,27 +2347,6 @@ Transform:
   - {fileID: 7889526377410360159}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -186.164, y: 79.992, z: 6.421997}
---- !u!65 &6472806186974937417
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3084136755045731417}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3146096179470573529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2797,59 +2433,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &3166793117835238527
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9185710878361867374}
-  - component: {fileID: 347833160718741483}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &9185710878361867374
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3166793117835238527}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.047, y: -1.159, z: -0.3460002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &347833160718741483
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3166793117835238527}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.92, y: 0.12, z: 1.75}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3265188136805171792
 GameObject:
   m_ObjectHideFlags: 0
@@ -2859,7 +2442,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6731665122951213683}
-  - component: {fileID: 6855016360214521273}
   m_Layer: 0
   m_Name: Fish_1_Prefab (2)
   m_TagString: Untagged
@@ -2883,27 +2465,6 @@ Transform:
   - {fileID: 7894097382366013851}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: -25.745, y: -4.358, z: -147.558}
---- !u!65 &6855016360214521273
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3265188136805171792}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.54, y: 2.26, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3293744479192673726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,7 +2474,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2634784917246664636}
-  - component: {fileID: 3235754529325383334}
   m_Layer: 0
   m_Name: Fish_Raz_2_Prefab 1 (5)
   m_TagString: Untagged
@@ -2937,27 +2497,6 @@ Transform:
   - {fileID: 193885845183935768}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 69.494, y: -241.08499, z: 25.946}
---- !u!65 &3235754529325383334
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3293744479192673726}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.52, y: 0.19, z: 0.35}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3324873622640077112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3139,7 +2678,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6341248847742269417}
-  - component: {fileID: 6936306577735172784}
   m_Layer: 0
   m_Name: Fish_1_Prefab (1)
   m_TagString: Untagged
@@ -3163,27 +2701,6 @@ Transform:
   - {fileID: 3664065768466791758}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: -82.758, y: 43.05, z: 115.416}
---- !u!65 &6936306577735172784
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3377858075494057448}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.54, y: 2.26, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3445550815456599575
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,44 +2906,6 @@ Transform:
   - {fileID: 3130318602616999903}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3905003421894387622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6669532132762012938}
-  m_Layer: 0
-  m_Name: Colliders
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6669532132762012938
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3905003421894387622}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7567447505752085598}
-  - {fileID: 1530688136583240343}
-  - {fileID: 6874042698741182876}
-  - {fileID: 3278932505469123470}
-  - {fileID: 8415837544309140530}
-  - {fileID: 9185710878361867374}
-  - {fileID: 2668606229111417540}
-  m_Father: {fileID: 255392916038203105}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3966909031363300230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,7 +2984,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 991659562183737545}
-  - component: {fileID: 4296195113402786657}
   m_Layer: 0
   m_Name: Fish_2_Prefab (5)
   m_TagString: Untagged
@@ -3529,27 +3007,6 @@ Transform:
   - {fileID: 5989914304532983100}
   m_Father: {fileID: 1233353428544154636}
   m_LocalEulerAnglesHint: {x: 57.296, y: -32.333, z: 0}
---- !u!65 &4296195113402786657
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4122065031715585653}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4149158854932082581
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,7 +3102,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7653512232950342655}
-  - component: {fileID: 4531414072485279752}
   m_Layer: 0
   m_Name: Fish_3_Prefab (3)
   m_TagString: Untagged
@@ -3669,27 +3125,6 @@ Transform:
   - {fileID: 6048971614659121516}
   m_Father: {fileID: 1233353428544154636}
   m_LocalEulerAnglesHint: {x: 73.186, y: -476.919, z: -413.668}
---- !u!65 &4531414072485279752
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4241756006634566201}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.67, y: 1.37, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4371494241863347396
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,7 +3134,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2640487102683843645}
-  - component: {fileID: 4966660266790716263}
   m_Layer: 0
   m_Name: Fish_3_Prefab (2)
   m_TagString: Untagged
@@ -3723,27 +3157,6 @@ Transform:
   - {fileID: 8961088159873669731}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: -79.626, y: -382.079, z: -82.109}
---- !u!65 &4966660266790716263
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4371494241863347396}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.67, y: 1.37, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4397518315052939686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,7 +3553,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8712837083716034659}
-  - component: {fileID: 902258238990002862}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (4)
   m_TagString: Untagged
@@ -4164,27 +3576,6 @@ Transform:
   - {fileID: 4450655522074543313}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -136.345, y: 0, z: 0}
---- !u!65 &902258238990002862
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4877953420459407568}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4896236746284727113
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,7 +3585,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5896754745113982426}
-  - component: {fileID: 1356517649995770173}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (3)
   m_TagString: Untagged
@@ -4218,27 +3608,6 @@ Transform:
   - {fileID: 6209876188993777863}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 53.054, y: 23.898, z: -6.187}
---- !u!65 &1356517649995770173
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4896236746284727113}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4952275137564734415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,7 +3789,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1537656172974343057}
-  - component: {fileID: 5306706527096424790}
   m_Layer: 0
   m_Name: Fish_1_Prefab
   m_TagString: Untagged
@@ -4444,27 +3812,6 @@ Transform:
   - {fileID: 5601382004909307225}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: -75.885, y: -70.524, z: 117.732}
---- !u!65 &5306706527096424790
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025629109009745717}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.54, y: 2.26, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5099900122573729123
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,7 +3821,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2830655652630818162}
-  - component: {fileID: 7300480246074666150}
   m_Layer: 0
   m_Name: Barrel_Prefap
   m_TagString: Untagged
@@ -4498,29 +3844,6 @@ Transform:
   - {fileID: 2940720746894568467}
   m_Father: {fileID: 5682934585844841457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &7300480246074666150
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5099900122573729123}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41
-  m_Height: 1.45
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5139860777478279803
 GameObject:
   m_ObjectHideFlags: 0
@@ -4616,7 +3939,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5194255630621595138}
-  - component: {fileID: 4561018489767131692}
   m_Layer: 0
   m_Name: Fish_Raz_2_Prefab 1
   m_TagString: Untagged
@@ -4640,27 +3962,6 @@ Transform:
   - {fileID: 6640495668202768786}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -2.748, y: 20.268, z: 3.397}
---- !u!65 &4561018489767131692
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5207874320419981626}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.52, y: 0.19, z: 0.35}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5209220208193576615
 GameObject:
   m_ObjectHideFlags: 0
@@ -4842,7 +4143,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7326901486225239919}
-  - component: {fileID: 7273995562251751290}
   m_Layer: 0
   m_Name: Fish_2_Prefab (1)
   m_TagString: Untagged
@@ -4866,27 +4166,6 @@ Transform:
   - {fileID: 3684643923204277857}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 70.53, y: 199.534, z: 104.695}
---- !u!65 &7273995562251751290
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5446320053331640456}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5503088053320149704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4896,7 +4175,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4509013473759111074}
-  - component: {fileID: 7895467213881439049}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (1)
   m_TagString: Untagged
@@ -4920,27 +4198,6 @@ Transform:
   - {fileID: 3520694885287167793}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 5.676, y: -223.41, z: 180.847}
---- !u!65 &7895467213881439049
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5503088053320149704}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5634048610185159829
 GameObject:
   m_ObjectHideFlags: 0
@@ -5199,59 +4456,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5751586668201506329
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1530688136583240343}
-  - component: {fileID: 5768425186360164611}
-  m_Layer: 0
-  m_Name: GameObject (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &1530688136583240343
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751586668201506329}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.356, y: -0.01999998, z: -1.3080001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &5768425186360164611
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751586668201506329}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.09, y: 2.41, z: 0.11}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5757626130190798289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5261,7 +4465,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6681796078724053859}
-  - component: {fileID: 3743350224763615128}
   m_Layer: 0
   m_Name: Fish_2_Prefab (3)
   m_TagString: Untagged
@@ -5285,27 +4488,6 @@ Transform:
   - {fileID: 2998017796098588369}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 53.542, y: 131.109, z: -305.886}
---- !u!65 &3743350224763615128
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5757626130190798289}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5772887782571406878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,7 +4669,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7056616662384544162}
-  - component: {fileID: 1072618753967193390}
   m_Layer: 0
   m_Name: Fish_3_Prefab (3)
   m_TagString: Untagged
@@ -5511,27 +4692,6 @@ Transform:
   - {fileID: 3103724353140778779}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 4.086, y: 46.471, z: -0.215}
---- !u!65 &1072618753967193390
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5911868743266059926}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.67, y: 1.37, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5915475609030440829
 GameObject:
   m_ObjectHideFlags: 0
@@ -5627,7 +4787,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5857324383541661521}
-  - component: {fileID: 8949099204691231340}
   m_Layer: 0
   m_Name: Fish_2_Prefab (6)
   m_TagString: Untagged
@@ -5651,27 +4810,6 @@ Transform:
   - {fileID: 3942992074316607423}
   m_Father: {fileID: 1233353428544154636}
   m_LocalEulerAnglesHint: {x: 50.519, y: -57.869, z: -2.287}
---- !u!65 &8949099204691231340
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6020211366325563354}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6040123472818419341
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,7 +4991,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5689669680164862939}
-  - component: {fileID: 1847018543884386489}
   m_Layer: 0
   m_Name: Fish_2_Prefab
   m_TagString: Untagged
@@ -5877,27 +5014,6 @@ Transform:
   - {fileID: 2015311880219530421}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 89.001, y: 0, z: 0}
---- !u!65 &1847018543884386489
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6246503468805738031}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6269668039738615691
 GameObject:
   m_ObjectHideFlags: 0
@@ -6035,7 +5151,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4804064638248924591}
-  - component: {fileID: 6044542018223469824}
   m_Layer: 0
   m_Name: Board_Prefab
   m_TagString: Untagged
@@ -6059,27 +5174,6 @@ Transform:
   - {fileID: 3574805863126804536}
   m_Father: {fileID: 3702913308710405641}
   m_LocalEulerAnglesHint: {x: 0, y: -188.316, z: 0}
---- !u!65 &6044542018223469824
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6434880173576352583}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.75, y: 0.16, z: 1.15}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6470263466410392477
 GameObject:
   m_ObjectHideFlags: 0
@@ -6089,7 +5183,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 939539941113066627}
-  - component: {fileID: 3811045670340788234}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (6)
   m_TagString: Untagged
@@ -6113,27 +5206,6 @@ Transform:
   - {fileID: 1489211024502786886}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -212.481, y: 47.386993, z: -61.666992}
---- !u!65 &3811045670340788234
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6470263466410392477}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6540017826191450273
 GameObject:
   m_ObjectHideFlags: 0
@@ -6326,8 +5398,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &6602534798035696925
 GameObject:
   m_ObjectHideFlags: 0
@@ -6423,7 +5495,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5309908770408245630}
-  - component: {fileID: 234225504782690451}
   m_Layer: 0
   m_Name: Drawer_Prefab (2)
   m_TagString: Untagged
@@ -6447,27 +5518,6 @@ Transform:
   - {fileID: 6223910359749579543}
   m_Father: {fileID: 4712773167771845713}
   m_LocalEulerAnglesHint: {x: 0, y: 127.072, z: 0}
---- !u!65 &234225504782690451
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6770004682328144024}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.82, y: 0.84, z: 0.82}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6800101058471596842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6477,7 +5527,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4567894257938344668}
-  - component: {fileID: 2269763769647361689}
   m_Layer: 0
   m_Name: Fish_Raz_1_Prefab
   m_TagString: Untagged
@@ -6501,27 +5550,6 @@ Transform:
   - {fileID: 1651710597103599467}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 17.928, y: 75.326, z: 31.633}
---- !u!65 &2269763769647361689
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6800101058471596842}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.79, y: 1.63, z: 0.43}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6859687850253362674
 GameObject:
   m_ObjectHideFlags: 0
@@ -6617,7 +5645,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8055799729645658974}
-  - component: {fileID: 7215906805703413894}
   m_Layer: 0
   m_Name: Fish_1_Prefab (2)
   m_TagString: Untagged
@@ -6641,27 +5668,6 @@ Transform:
   - {fileID: 7210100513246216848}
   m_Father: {fileID: 1233353428544154636}
   m_LocalEulerAnglesHint: {x: -116.208, y: 26.904007, z: -55.78299}
---- !u!65 &7215906805703413894
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7000524934800789785}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.54, y: 2.26, z: 0.37}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7036181036534925911
 GameObject:
   m_ObjectHideFlags: 0
@@ -6721,7 +5727,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6355035968512034965}
-  - component: {fileID: 2144280326386090639}
   m_Layer: 0
   m_Name: Fish_Raz_2_Prefab 1 (3)
   m_TagString: Untagged
@@ -6745,27 +5750,6 @@ Transform:
   - {fileID: 6447065809456458728}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 23.784, y: -2.759, z: -167.162}
---- !u!65 &2144280326386090639
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7259947707217977081}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.52, y: 0.19, z: 0.35}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7342156666253458878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6775,7 +5759,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6360619811057041837}
-  - component: {fileID: 7268653343126032604}
   m_Layer: 0
   m_Name: Fish_2_Prefab (2)
   m_TagString: Untagged
@@ -6799,27 +5782,6 @@ Transform:
   - {fileID: 6428480001203968522}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: -56.881, y: 229.385, z: -144.55}
---- !u!65 &7268653343126032604
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7342156666253458878}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7343861436116559535
 GameObject:
   m_ObjectHideFlags: 0
@@ -6906,112 +5868,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7432381080693351383
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8415837544309140530}
-  - component: {fileID: 2081320351239261317}
-  m_Layer: 0
-  m_Name: GameObject (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &8415837544309140530
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7432381080693351383}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.371, y: -0.19700003, z: 0.572}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2081320351239261317
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7432381080693351383}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.09, y: 2.06, z: 0.11}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &7491704543329495453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6874042698741182876}
-  - component: {fileID: 6158209534211987587}
-  m_Layer: 0
-  m_Name: GameObject (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &6874042698741182876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7491704543329495453}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.279, y: -0.01999998, z: -1.3080001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6158209534211987587
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7491704543329495453}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.09, y: 2.41, z: 0.11}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7500279867958921366
 GameObject:
   m_ObjectHideFlags: 0
@@ -7098,59 +5954,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7511076587023327702
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3278932505469123470}
-  - component: {fileID: 3703126956265220147}
-  m_Layer: 0
-  m_Name: GameObject (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &3278932505469123470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7511076587023327702}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.279, y: -0.19700003, z: 0.572}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3703126956265220147
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7511076587023327702}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.09, y: 2.06, z: 0.11}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7575876923223127838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7323,59 +6126,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &7712293652925519590
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7567447505752085598}
-  - component: {fileID: 4865430053482185579}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
---- !u!4 &7567447505752085598
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7712293652925519590}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.321, y: -1.064, z: 1.118}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6669532132762012938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4865430053482185579
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7712293652925519590}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.32, y: 0.75, z: 0.8}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7765101280267547965
 GameObject:
   m_ObjectHideFlags: 0
@@ -7385,7 +6135,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2481858416375683729}
-  - component: {fileID: 8656091463058764214}
   m_Layer: 0
   m_Name: Fish_Raz_1_Prefab (3)
   m_TagString: Untagged
@@ -7409,27 +6158,6 @@ Transform:
   - {fileID: 1586734382368641268}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 36.035, y: 82.129, z: -4.65}
---- !u!65 &8656091463058764214
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7765101280267547965}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.79, y: 1.63, z: 0.43}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7813719409339958430
 GameObject:
   m_ObjectHideFlags: 0
@@ -7525,7 +6253,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5471017064522559501}
-  - component: {fileID: 8428228246312222231}
   m_Layer: 0
   m_Name: Bucket_Prefab
   m_TagString: Untagged
@@ -7549,29 +6276,6 @@ Transform:
   - {fileID: 4392724308376185907}
   m_Father: {fileID: 3702913308710405641}
   m_LocalEulerAnglesHint: {x: 0, y: -39.477, z: 0}
---- !u!136 &8428228246312222231
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8025749805347081896}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.1
-  m_Height: 3.44
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8161844062465476048
 GameObject:
   m_ObjectHideFlags: 0
@@ -7753,7 +6457,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7167534059772996258}
-  - component: {fileID: 6817131152994940305}
   m_Layer: 0
   m_Name: Knife_Prefab
   m_TagString: Untagged
@@ -7777,27 +6480,6 @@ Transform:
   - {fileID: 5765604073290863223}
   m_Father: {fileID: 3702913308710405641}
   m_LocalEulerAnglesHint: {x: 2.377, y: 91.709, z: -54.277}
---- !u!65 &6817131152994940305
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8184292505390471673}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.82, y: 2.56, z: 0.28}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8198679936341630453
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,7 +6685,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 240890843928223734}
-  - component: {fileID: 8122757842857295226}
   m_Layer: 0
   m_Name: Fish_Raz_1_Prefab (3)
   m_TagString: Untagged
@@ -8027,27 +6708,6 @@ Transform:
   - {fileID: 1160106297346966739}
   m_Father: {fileID: 1233353428544154636}
   m_LocalEulerAnglesHint: {x: 59.144, y: -20.756, z: 11.623}
---- !u!65 &8122757842857295226
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8369700166573794672}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.79, y: 1.63, z: 0.43}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8418333109992209852
 GameObject:
   m_ObjectHideFlags: 0
@@ -8349,7 +7009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6745985123331796992}
-  - component: {fileID: 8656604676409784641}
   m_Layer: 0
   m_Name: Fish_Raz_2_Prefab 1 (1)
   m_TagString: Untagged
@@ -8373,27 +7032,6 @@ Transform:
   - {fileID: 2881489285710698354}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 17.852, y: 18.705, z: -28.777}
---- !u!65 &8656604676409784641
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636465192797812182}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.52, y: 0.19, z: 0.35}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8680755194842694193
 GameObject:
   m_ObjectHideFlags: 0
@@ -8403,7 +7041,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2400192751629470260}
-  - component: {fileID: 8714738103287027012}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2
   m_TagString: Untagged
@@ -8427,27 +7064,6 @@ Transform:
   - {fileID: 453365712822525454}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: 5.676, y: -88.68, z: 180.847}
---- !u!65 &8714738103287027012
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8680755194842694193}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8685526009217788801
 GameObject:
   m_ObjectHideFlags: 0
@@ -8457,7 +7073,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4249914667566595135}
-  - component: {fileID: 4017401268762088433}
   m_Layer: 0
   m_Name: Fish_Raz_3_Prefab 2 (7)
   m_TagString: Untagged
@@ -8481,27 +7096,6 @@ Transform:
   - {fileID: 6361285797789861976}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -78.236, y: 219.556, z: -295.011}
---- !u!65 &4017401268762088433
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8685526009217788801}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.46, y: 0.31, z: 0.39}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8725304039904637750
 GameObject:
   m_ObjectHideFlags: 0
@@ -8511,7 +7105,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1688099775832937984}
-  - component: {fileID: 1595853632363274205}
   m_Layer: 0
   m_Name: Fish_2_Prefab (4)
   m_TagString: Untagged
@@ -8535,27 +7128,6 @@ Transform:
   - {fileID: 8672905975541222313}
   m_Father: {fileID: 3761284905632062125}
   m_LocalEulerAnglesHint: {x: 77.892, y: 57.913, z: 27.688}
---- !u!65 &1595853632363274205
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8725304039904637750}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.33, y: 1.54, z: 0.16}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8927775977610896601
 GameObject:
   m_ObjectHideFlags: 0
@@ -8565,7 +7137,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 164731630544408790}
-  - component: {fileID: 4956717520082214334}
   m_Layer: 0
   m_Name: Loading_crane_Prefab
   m_TagString: Untagged
@@ -8589,27 +7160,6 @@ Transform:
   - {fileID: 4187387240831087890}
   m_Father: {fileID: 9065887482236972766}
   m_LocalEulerAnglesHint: {x: 0, y: -120.24, z: 0}
---- !u!65 &4956717520082214334
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8927775977610896601}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.4, y: 3.13, z: 0.4}
-  m_Center: {x: -0.57, y: 0.12, z: 0}
 --- !u!1 &8935696692016428087
 GameObject:
   m_ObjectHideFlags: 0
@@ -8619,7 +7169,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3998061804368981535}
-  - component: {fileID: 3804479163189548806}
   m_Layer: 0
   m_Name: Fish_Raz_1_Prefab (4)
   m_TagString: Untagged
@@ -8643,27 +7192,6 @@ Transform:
   - {fileID: 7836879960603634612}
   m_Father: {fileID: 1006775182303081550}
   m_LocalEulerAnglesHint: {x: -20.626, y: 131.29, z: 2.404}
---- !u!65 &3804479163189548806
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8935696692016428087}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.79, y: 1.63, z: 0.43}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8957631225336283071
 GameObject:
   m_ObjectHideFlags: 0
@@ -8759,7 +7287,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2543314458272514861}
-  - component: {fileID: 2777130323261677755}
   m_Layer: 0
   m_Name: Barrel_open_Prefap
   m_TagString: Untagged
@@ -8784,26 +7311,3 @@ Transform:
   - {fileID: 7391648521949922040}
   m_Father: {fileID: 5682934585844841457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &2777130323261677755
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9066268627216449389}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.41
-  m_Height: 1.57
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
