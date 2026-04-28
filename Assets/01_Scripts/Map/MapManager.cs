@@ -46,8 +46,7 @@ public class MapManager : MonoBehaviour
     {
         ClearMap();
         GenerateMapData();
-        RegisterInitialBuildings();
-        RegisterInitialTrees();
+        RegisterInitialMapObjects();
         GenerateChunks();
     }
 
@@ -70,7 +69,7 @@ public class MapManager : MonoBehaviour
     }
     #endregion
 
-    #region < Map 생성>
+    #region < Map 생성 >
     
     private void GenerateMapData()
     {
@@ -118,7 +117,7 @@ public class MapManager : MonoBehaviour
     #region < Tile / Bound >
 
     // 월드 좌표를 타일 배열 좌표로 변경
-    private Vector2Int WorldToTile(Vector3 worldPos)
+    public Vector2Int WorldToTile(Vector3 worldPos)
     {
         int tileX = Mathf.RoundToInt(worldPos.x + mapWidth / 2f);
         int tileZ = Mathf.RoundToInt(worldPos.z + mapHeight / 2f);
@@ -127,33 +126,33 @@ public class MapManager : MonoBehaviour
     }
 
     // 좌표가 맵 범위 내에 있는지 확인
-    private bool IsWithinMapBounds(int x, int z)
+    public bool IsWithinMapBounds(int x, int z)
     {
         return x >= 0 && x < mapWidth && z >= 0 && z < mapHeight;
     }
     #endregion
 
-    #region < 빌딩 배치 관리 >
+    #region < 초기 MapObject 점유상태 >
 
-    // 게임 시작할 때 이미 맵에 배치되어 있는 건물들을 mapData에 등록
-    private void RegisterInitialBuildings()
+    // 게임 시작할 때 이미 맵에 배치되어 있는 MapObject들을 mapData에 등록
+    private void RegisterInitialMapObjects()
     {
-        Building[] buildings = FindObjectsByType<Building>(FindObjectsSortMode.None);
+        MapObject[] mapObjects = FindObjectsByType<MapObject>(FindObjectsSortMode.None);
 
-        foreach (Building building in buildings)
+        foreach (MapObject mapObject in mapObjects)
         {
-            SetBuildingTilesOccupied(building, true); // 이미 점유중인 타일에는 빌딩을 지을 수 없음
+            SetObjectTilesOccupied(mapObject, true); // 이미 점유중인 타일에는 빌딩을 지을 수 없음
         }
     }
 
-    // 특정 건물이 차지하는 타일들의 점유 상태를 설정하는 함수
-    private void SetBuildingTilesOccupied(Building building, bool occupied)
+    // Mapobject들이 차지하는 타일들의 점유 상태를 설정하는 함수
+    public void SetObjectTilesOccupied(MapObject mapObject, bool occupied)
     {
-        Vector2Int origin = WorldToTile(building.transform.position);
+        Vector2Int origin = WorldToTile(mapObject.transform.position);
 
-        for (int x = 0; x < building.Width; x++)
+        for (int x = 0; x < mapObject.Width; x++)
         {
-            for (int z = 0; z < building.Height; z++)
+            for (int z = 0; z < mapObject.Height; z++)
             {
                 int tileX = origin.x + x;
                 int tileZ = origin.y + z;
@@ -168,39 +167,56 @@ public class MapManager : MonoBehaviour
     }
     #endregion
 
-    #region < 나무 배치 관리 >
 
-    // 게임 시작할 때 이미 맵에 배치되어 있는 나무들을 mapData에 등록
-    private void RegisterInitialTrees()
+    #region < Move >
+
+    // 타일 좌표를 월드 좌표로 변경
+
+    public Vector3 TileToWorld(Vector2Int tilePos)
     {
-        Tree[] trees = FindObjectsByType<Tree>(FindObjectsSortMode.None);
+        float worldX = tilePos.x - mapWidth / 2f;
+        float worldZ = tilePos.y - mapHeight / 2f;
 
-        foreach (Tree tree in trees)
-        {
-            Vector2Int tilePos = WorldToTile(tree.transform.position);
-
-            if (!IsWithinMapBounds(tilePos.x, tilePos.y))
-            {
-                Debug.LogWarning($"{tree.name}가 범위 밖에 있습니다.");
-                continue;
-            }
-
-            TileData tile = mapData[tilePos.x, tilePos.y];
-
-            if (tile.occupied)
-            {
-                Debug.LogWarning("새 위치에 이미 오브젝트가 있습니다.");
-                continue;
-            }
-
-            tile.occupied = true;
-            tile.buildable = false;
-
-            tile.hasTree = true;
-            tile.tree = tree;
-
-            tree.SetTilePosition(tilePos);
-        }
+        return new Vector3(worldX, 0f, worldZ);
     }
+
+    // 해당 위치에 MapObject를 놓을 수 있는지 확인
+    public bool CanPlaceObject(MapObject mapObject, Vector2Int origin)
+    {
+        for (int x = 0; x < mapObject.Width; x++)
+        {
+            for (int z = 0; z < mapObject.Height; z++)
+            {
+                int tileX = origin.x + x;
+                int tileZ = origin.y + z;
+
+                if (!IsWithinMapBounds(tileX, tileZ))
+                {
+                    return false;
+                }
+
+                TileData tile = mapData[tileX, tileZ];
+
+                if (!tile.buildable || tile.occupied)
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+
+    // MapObject 이동
+    public void MoveObject(MapObject mapObject, Vector2Int newOrigin)
+    {
+        SetObjectTilesOccupied(mapObject, false);
+
+        mapObject.transform.position = TileToWorld(newOrigin);
+
+        SetObjectTilesOccupied(mapObject, true);
+    }
+
     #endregion
 }

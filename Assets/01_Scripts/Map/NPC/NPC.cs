@@ -38,6 +38,7 @@ public class NPC : MonoBehaviour
     {
         CheckPlayerDistance();
 
+        // *** 나중에 Player Interact로 바꿀예정
         if (isPlayerInRange && Keyboard.current.eKey.wasPressedThisFrame)
         {
             NPCManager.Instance.InteractWithCurrentNPC();
@@ -75,7 +76,7 @@ public class NPC : MonoBehaviour
             if (NPCManager.Instance != null)
                 NPCManager.Instance.ClearCurrentNPC(this);
         }
-    }
+    }   
 
     private void OnDrawGizmos()
     {
