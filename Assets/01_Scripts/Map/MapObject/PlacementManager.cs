@@ -17,10 +17,12 @@ public class PlacementManager : MonoBehaviour
     private bool isMovingObject;
     private bool canPlace;
 
+
     private Vector2Int currentTilePos;  // 현재 마우스가 가리키는 타일 위치
     private Vector2Int originalTilePos;  // 이동 전 원래 타일 위치
 
-    private GameObject previewParent;
+    private GameObject canPreviewParent;
+    private GameObject cantPreviewParent;
 
     private void Start()
     {
@@ -85,12 +87,13 @@ public class PlacementManager : MonoBehaviour
     private void EnterMoveMode(MapObject mapObject)
     {
         selectedObject = mapObject;
-
         isMovingObject = true;
 
         originalTilePos = mapManager.WorldToTile(selectedObject.transform.position);
 
         mapManager.SetObjectTilesOccupied(selectedObject, false);
+
+        CreatePreviewObjects();
 
         Debug.Log($"{selectedObject.name}의 위치를 이동합니다.");
     }
@@ -109,7 +112,7 @@ public class PlacementManager : MonoBehaviour
         {
             CancelMove();
         }
-    }        
+    }
 
     private void UpdatePreviewPosition()
     {
@@ -118,15 +121,54 @@ public class PlacementManager : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            currentTilePos = mapManager.WorldToTile(hit.point);
+            Vector2Int mouseTilePos = mapManager.WorldToTile(hit.point);
+            currentTilePos = GetOriginTileFromCenter(mouseTilePos);
 
             Vector3 worldPos = mapManager.TileToWorld(currentTilePos);
             selectedObject.transform.position = worldPos;
 
             canPlace = mapManager.CanPlaceObject(selectedObject, currentTilePos);
 
-            RefreshPreviewCells(currentTilePos, canPlace); 
+            UpdatePreviewObjects(currentTilePos, canPlace);
         }
+    }
+
+    private void UpdatePreviewObjects(Vector2Int origin, bool placeable)
+    {
+        if (canPreviewParent == null || cantPreviewParent == null)
+            return;
+
+        canPreviewParent.SetActive(placeable);
+        cantPreviewParent.SetActive(!placeable);
+
+        GameObject activeParent = placeable ? canPreviewParent : cantPreviewParent;
+
+        int index = 0;
+
+        for (int x = 0; x < selectedObject.Width; x++)
+        {
+            for (int z = 0; z < selectedObject.Height; z++)
+            {
+                Vector2Int tilePos = new Vector2Int(origin.x + x, origin.y + z);
+                Vector3 worldPos = mapManager.TileToWorld(tilePos);
+
+                Transform cell = activeParent.transform.GetChild(index);
+                cell.position = worldPos + new Vector3(0f, 0.05f, 0f);
+
+                index++;
+            }
+        }
+    }
+
+    private Vector2Int GetOriginTileFromCenter(Vector2Int centerTilePos)
+    {
+        int offsetX = selectedObject.Width / 2;
+        int offsetZ = selectedObject.Height / 2;
+
+        return new Vector2Int(
+            centerTilePos.x - offsetX,
+            centerTilePos.y - offsetZ
+        );
     }
 
     private void ConfirmMove()
@@ -161,44 +203,37 @@ public class PlacementManager : MonoBehaviour
         selectedObject = null;
         canPlace = false;
 
-        if (previewParent != null)
+        if (canPreviewParent != null)
         {
-            Destroy(previewParent);
-            previewParent = null;
+            Destroy(canPreviewParent);
+            canPreviewParent = null;
+        }
+
+        if (cantPreviewParent != null)
+        {
+            Destroy(cantPreviewParent);
+            cantPreviewParent = null;
         }
     }
 
-    private void RefreshPreviewCells(Vector2Int origin, bool placeable)
+    private void CreatePreviewObjects()
     {
-        if (previewParent != null)
-        {
-            Destroy(previewParent);
-        }
-
-        previewParent = new GameObject("Placement Preview Cells");
-
-        GameObject targetPrefab;
-
-        if (placeable)
-        {
-            targetPrefab = canPlacePrefab;
-        }
-        else
-        {
-            targetPrefab = cantPlacePrefab;
-        }
+        canPreviewParent = new GameObject("Can Placement Preview Cells");
+        cantPreviewParent = new GameObject("Cant Placement Preview Cells");
 
         for (int x = 0; x < selectedObject.Width; x++)
         {
             for (int z = 0; z < selectedObject.Height; z++)
             {
-                Vector2Int tilePos = new Vector2Int(origin.x + x, origin.y + z);
-                Vector3 worldPos = mapManager.TileToWorld(tilePos);
+                GameObject canCell = Instantiate(canPlacePrefab, canPreviewParent.transform);
+                GameObject cantCell = Instantiate(cantPlacePrefab, cantPreviewParent.transform);
 
-                GameObject cell = Instantiate(targetPrefab, previewParent.transform);
-                cell.transform.position = worldPos + new Vector3(0f, 0.05f, 0f);
+                canCell.name = $"CanPreviewCell_{x}_{z}";
+                cantCell.name = $"CantPreviewCell_{x}_{z}";
             }
         }
-    }
 
+        canPreviewParent.SetActive(false);
+        cantPreviewParent.SetActive(false);
+    }
 }
