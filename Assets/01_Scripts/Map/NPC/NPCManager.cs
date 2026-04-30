@@ -50,14 +50,25 @@ public class NPCManager : MonoBehaviour
             case NPCType.WeaponShop:
                 Debug.Log("Weapon 상점 NPC와 상호작용");
                 break;
+
             case NPCType.Fisherman:
                 Debug.Log("Fisherman NPC와 상호작용");
                 break;
+
             case NPCType.Pirate:
                 Debug.Log("Pirate NPC와 상호작용");
                 break;
+
             case NPCType.TrainDriver:
                 Debug.Log("TrainDriver NPC와 상호작용");
+                break;
+
+            case NPCType.Banker1:
+                Debug.Log("Banker1 NPC와 상호작용");
+                break;
+
+            case NPCType.Banker2:
+                Debug.Log("Banker2 NPC와 상호작용");
                 break;
         }
     }

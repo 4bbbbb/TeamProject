@@ -8,7 +8,10 @@ public enum NPCType
     WeaponShop,
     Fisherman,
     Pirate,
-    TrainDriver
+    TrainDriver,
+    Banker1,
+    Banker2,
+    PartTimeWorker,
 
 }
 
