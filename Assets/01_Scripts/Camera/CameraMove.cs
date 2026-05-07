@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class CameraMove : MonoBehaviour
 {
+    [Header("---- Components -----")]
     [SerializeField] PlayerInput playerInput;
 
     [Header("----- Camera Mode -----")]
@@ -11,14 +12,21 @@ public class CameraMove : MonoBehaviour
     [SerializeField] private Vector3 followInit = new Vector3(0, 5.5f, -4.1f);
     [SerializeField] float sensitivity = 100f;
 
+    private GameObject player;
+
+    private CinemachineCamera cam;
     private CinemachineFollow follow;
 
     private Vector2 scroll = Vector2.zero;
 
     private void Awake()
     {
+        player = GameObject.FindWithTag("Player");
+        playerInput = player.GetComponent<PlayerInput>();
+
         InputActionMap actionMap = playerInput.actions.FindActionMap("Player");
 
+        cam = GetComponent<CinemachineCamera>();
         follow = GetComponent<CinemachineFollow>();
 
         // Zoom
@@ -27,6 +35,11 @@ public class CameraMove : MonoBehaviour
             action.performed += context => scroll = context.ReadValue<Vector2>();
             action.canceled += context => follow.FollowOffset = followInit;
         }
+    }
+
+    private void Reset()
+    {
+        cam.Target.TrackingTarget = player.transform.FindChildByName("CamPos");
     }
 
     private void Update()
