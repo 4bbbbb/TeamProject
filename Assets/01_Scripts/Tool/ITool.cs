@@ -1,7 +1,6 @@
 using System;
 
-public interface ITool : IEquipable
+public interface ITool
 {
     void Init(ToolData data);
-    void Use();
 }

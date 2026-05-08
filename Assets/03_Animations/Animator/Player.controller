@@ -200,7 +200,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Blend Tree
+  m_Name: Armed_Move
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -236,7 +236,7 @@ BlendTree:
     m_DirectBlendParameter: SpeedZ
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: bf39a4a5baa7b1c4c86af5efb7197282, type: 3}
+    m_Motion: {fileID: -203655887218126122, guid: 77d0fbadc464ffd439656b46c88bc35f, type: 3}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -244,7 +244,7 @@ BlendTree:
     m_DirectBlendParameter: SpeedZ
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 8052aafc1e55f8645afddebf1d3e9eb7, type: 3}
+    m_Motion: {fileID: -203655887218126122, guid: d49b4339b679d174cacbdcb6476c4221, type: 3}
     m_Threshold: 4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1

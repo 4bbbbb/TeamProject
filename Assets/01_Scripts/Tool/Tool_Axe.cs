@@ -2,19 +2,18 @@ using UnityEngine;
 
 public class Tool_Axe : MonoBehaviour, ITool
 {
-    [SerializeField] private int toolId;
-
     private ToolData data;
 
     private new Collider collider;
 
+    private GameObject rootObject;
+
     private string toolPosName = "ToolPos";
     private Transform toolPos;
 
-    private GameObject rootObject;
-
-    private bool bEquip;
-    private bool bUse;
+    [Header("----- Info -----")]
+    [SerializeField] private int toolId;
+    [SerializeField] private int curDurability;
 
     private void Awake()
     {
@@ -51,30 +50,10 @@ public class Tool_Axe : MonoBehaviour, ITool
         // 나무에만 충돌 가능
         if (other.CompareTag("Tree"))
         {
-            data.durability -= data.reduce;
+            curDurability -= data.reduce;
 
-            if (data.durability < 0)
+            if (curDurability < 0)
                 Destroy(gameObject);
         }
-    }
-
-    // 소환, 충돌 처리만 담당
-
-    public void Equip()
-    {
-        bEquip = true;
-
-
-    }
-
-    public void UnEquip()
-    {
-        bEquip = false;
-    }
-
-    public void Use()
-    {
-        if (bUse)
-            return;
     }
 }
