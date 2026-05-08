@@ -8,10 +8,17 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/02_Prefabs/Tool/WaterCan.prefab
   - component: {fileID: 5162827961379970673}
   - component: {fileID: 4679454021803449476}
   - component: {fileID: 3416719491755966860}
   - component: {fileID: 3848238597617819785}
+=======
+  - component: {fileID: 4581855873754855809}
+  - component: {fileID: 8297585443139896384}
+  - component: {fileID: 8141053714141005655}
+  - component: {fileID: 887893804537071416}
+>>>>>>> origin/Map:Assets/02_Prefabs/Map/Building/House/House_NPC1.prefab
   m_Layer: 0
   m_Name: WaterCan
   m_TagString: Untagged
@@ -108,4 +115,8 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
+<<<<<<< HEAD:Assets/02_Prefabs/Tool/WaterCan.prefab
   m_Mesh: {fileID: 3452129891811701434, guid: c3568e678d846a349a694e4904eb4247, type: 3}
+=======
+  m_Mesh: {fileID: 6040685055165959431, guid: 84473fd9542e925448af3e0f6a1a5043, type: 3}
+>>>>>>> origin/Map:Assets/02_Prefabs/Map/Building/House/House_NPC1.prefab
