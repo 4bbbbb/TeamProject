@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - EnterinConvenience
+  - EnterinBank
+  - EnterinTent
+  - EnterinNPC1House
+  - EnterinNPC2House
   layers:
   - Default
   - TransparentFX

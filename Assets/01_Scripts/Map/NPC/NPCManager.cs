@@ -70,6 +70,10 @@ public class NPCManager : MonoBehaviour
             case NPCType.Banker2:
                 Debug.Log("Banker2 NPC와 상호작용");
                 break;
+
+            case NPCType.PartTimeWorker:
+                Debug.Log("PartTimeWorker NPC와 상호작용");
+                break;
         }
     }
 }

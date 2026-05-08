@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public enum NPCType
 {
@@ -12,81 +11,40 @@ public enum NPCType
     Banker1,
     Banker2,
     PartTimeWorker,
-
 }
 
-public class NPC : MonoBehaviour
+public class NPC : Interactable
 {
     [Header("<< NPC 타입 >>")]
     [SerializeField] private NPCType npcType;
 
-    [Header("<< 상호작용 >>")]    
-    [SerializeField] private float interactionRange = 4f;    
-    [SerializeField] private bool isPlayerInRange;
-
-    private Transform player;
-
     public NPCType NPCType => npcType;
-    public bool IsPlayerInRange => isPlayerInRange;
 
-    private void Start()
+    protected override void Interact()
     {
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-
-        if (playerObj != null)
-            player = playerObj.transform;
-    }
-
-    private void Update()
-    {
-        CheckPlayerDistance();
-
-        // *** 나중에 Player Interact로 바꿀예정
-        if (isPlayerInRange && Keyboard.current.eKey.wasPressedThisFrame)
+        if (NPCManager.Instance != null)
         {
             NPCManager.Instance.InteractWithCurrentNPC();
         }
     }
 
-    private void CheckPlayerDistance()
+    protected override void OnEnterInteractionRange()
     {
-        if(player == null) 
-            return;
+        Debug.Log($"{npcType} NPC 상호작용 범위에 들어옴");
 
-        float distance = Vector3.Distance(transform.position, player.position);
-
-        bool isInCurrentRange = distance <= interactionRange;
-
-        if (isInCurrentRange == isPlayerInRange)
-            return;
-
-        isPlayerInRange = isInCurrentRange;
-
-
-        isPlayerInRange = isInCurrentRange;
-
-        if (isPlayerInRange)
+        if (NPCManager.Instance != null)
         {
-            Debug.Log($"{npcType} NPC 상호작용 범위에 들어옴");
-
-            if (NPCManager.Instance != null)
-                NPCManager.Instance.SetCurrentNPC(this);
+            NPCManager.Instance.SetCurrentNPC(this);
         }
-        else
-        {
-            Debug.Log($"{npcType} NPC 상호작용 범위에서 나감");
+    }
 
-            if (NPCManager.Instance != null)
-                NPCManager.Instance.ClearCurrentNPC(this);
-        }
-    }   
-
-    private void OnDrawGizmos()
+    protected override void OnExitInteractionRange()
     {
-        if (!isPlayerInRange)
-            return;
+        Debug.Log($"{npcType} NPC 상호작용 범위에서 나감");
 
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, interactionRange);
+        if (NPCManager.Instance != null)
+        {
+            NPCManager.Instance.ClearCurrentNPC(this);
+        }
     }
 }
