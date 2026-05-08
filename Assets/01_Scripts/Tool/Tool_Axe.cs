@@ -6,34 +6,65 @@ public class Tool_Axe : MonoBehaviour, ITool
 
     private ToolData data;
 
+    private new Collider collider;
+
+    private string toolPosName = "ToolPos";
+    private Transform toolPos;
+
+    private GameObject rootObject;
+
     private bool bEquip;
     private bool bUse;
 
-    private void Start()
+    private void Awake()
     {
-        ToolData toolData = ToolLoadManager.Instance.GetToolData(toolId);
+        collider = GetComponent<Collider>();
 
-        if (toolData == null)
+        rootObject = transform.root.gameObject;
+        Debug.Assert(rootObject != null, "RootObject is null");
+
+        toolPos = rootObject.transform.FindChildByName(toolPosName);
+        Debug.Assert(toolPosName != null, "ToolPosName is null");
+
+        transform.SetParent(toolPos, false);
+    }
+
+    // ToolData 적용
+    public void Init(ToolData data)
+    {
+        if (data == null)
         {
-            Debug.LogError($"ToolData is null\nID : {toolId}");
+            Debug.LogError("ToolData is null");
             return;
         }
 
-        Init(toolData);
+        this.data = data;
+        Debug.Log($"Apply Completely\nID : {data.id}\nName : {data.name}");
     }
 
-    public void Init(ToolData data)
+    private void OnTriggerEnter(Collider other)
     {
-        this.data = data;
-        Debug.Log($"ToolData 적용 완료\nID : {data.id}\nName : {data.name}");
+        // 플레이어 충돌 처리 방지
+        if (other.gameObject == rootObject)
+            return;
+
+        // 나무에만 충돌 가능
+        if (other.CompareTag("Tree"))
+        {
+            data.durability -= data.reduce;
+
+            if (data.durability < 0)
+                Destroy(gameObject);
+        }
     }
+
+    // 소환, 충돌 처리만 담당
 
     public void Equip()
     {
-        if (bEquip)
-            return;
-
         bEquip = true;
+
+
     }
 
     public void UnEquip()

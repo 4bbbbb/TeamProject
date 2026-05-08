@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ToolLoadManager : MonoBehaviour
 {
-    public static ToolLoadManager Instance {  get; private set; }
+    public static ToolLoadManager Instance { get; private set; }
 
     private Dictionary<int, ToolData> toolDict;
 
@@ -38,6 +38,9 @@ public class ToolLoadManager : MonoBehaviour
         // µñ¼Å³Ê¸®¿¡ ³Ö¾îÁÖ±â
         foreach (ToolData tool in table.tools)
         {
+            if (toolDict.ContainsKey(tool.id))
+                continue;
+
             toolDict.Add(tool.id, tool);
         }
     }
